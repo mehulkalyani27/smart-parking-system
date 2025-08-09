@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block tittle%}
+Contact
+{% endblock tittle%}
+{% block body%}
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+ <!--Stylesheet-->
+ <style media="screen">
+   *,
+*:before,
+*:after{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body {
+background-image: url('static/bg/5.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed; 
+background-size: cover;
+}
+.background{
+ width: 430px;
+ height: 620px;
+ position: absolute;
+ transform: translate(-50%,-50%);
+ left: 50%;
+ top: 50%;
+}
+.background .shape{
+ height: 300px;
+ width: 200px;
+ position: absolute;
+ border-radius: 50%;
+}
+.shape:first-child{
+ background: linear-gradient(
+     #1845ad,
+     #23a2f6
+ );
+ left: -10px;
+ top: -80px;
+}
+.shape:last-child{
+ background: linear-gradient(
+     to right,
+     #ff512f,
+     #f09819
+ );
+ right: -30px;
+ bottom: -80px;
+}
+h1{
+  color: #ffffff;
+  padding: -10px 0;
+  font-size: 50px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Poppins',sans-serif;
+}
+p{
+  color: #ffffff;
+  padding: -20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins',sans-serif;
+  text-align: center;
+  height: 50px;
+  width: 50%;
+}
+ </style>
+  <br></br>
+<h1>Contact</h1>
+<br></br>
+<center><img src="static/plogo.jpg"alt="..." width="225" height="200"></center>
+<br></br>
+<center><p>Email : smartparkingsys@gmail.com</p>
+  <p>Contact : 9999888877</p>
+</center>
+{% endblock body%}
+

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block tittle%}
+Home
+{% endblock tittle%}
+{% block body%}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../static/css/spage.css" type="text/css">
+<br>
+<center><h1>Select the Parking Storey</h1></center>
+<br></br>
+<div class="dropdown">
+    <center><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Select Parking Storey
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="http://127.0.0.1:8000/ps1">Parking Storey 1</a></li>
+      <li><a class="dropdown-item" href="http://127.0.0.1:8000/ps2">Parking Storey 2</a></li>
+      <li><a class="dropdown-item" href="http://127.0.0.1:8000/ps3">Parking Storey 3</a></li>
+      <li><a class="dropdown-item" href="http://127.0.0.1:8000/ps4">Parking Storey 4</a></li>
+      <li><a class="dropdown-item" href="http://127.0.0.1:8000/ps5">Parking Storey 5</a></li>
+      <li><a class="dropdown-item" href="http://127.0.0.1:8000/ps6">Parking Storey 6</a></li>
+      <li><a class="dropdown-item" href="http://127.0.0.1:8000/ps7">Parking Storey 7</a></li>
+    </ul>
+  </div>
+{% endblock body%}

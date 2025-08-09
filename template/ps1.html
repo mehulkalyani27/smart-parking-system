@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+{% block tittle%}
+PS1
+{% endblock tittle%}
+{% block body%}
+<style media="screen">
+    *,
+  *:before,
+  *:after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+  body {
+  background-image: url('static/bg/5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+  }
+  .background{
+  width: 430px;
+  height: 620px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  }
+  .background .shape{
+  height: 300px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+  }
+  .shape:first-child{
+  background: linear-gradient(
+      #1845ad,
+      #23a2f6
+  );
+  left: -10px;
+  top: -80px;
+  }
+  .shape:last-child{
+  background: linear-gradient(
+      to right,
+      #ff512f,
+      #f09819
+  );
+  right: -30px;
+  bottom: -80px;
+  }
+  label{
+  display: block;
+  margin-right: -30px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  }
+  input{
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  }
+  ::placeholder{
+  color: #e5e5e5;
+  }
+  button{
+  margin-top: 0px;
+  margin-left: 20px;
+  width: 10%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  p{
+   color: #000000;
+   padding: -10px 0;
+   font-size: 14px;
+   font-weight: 600;
+   border-radius: 5px;
+   cursor: pointer;
+  }
+  select {
+   margin-bottom: 15px;
+   margin-top: -5px;
+   display: block;
+   height: 50px;
+   width: 100%;
+   background-color: rgba(255,255,255,0.07);
+   border-radius: 3px;
+   padding: 0 10px;
+   margin-top: 5px;
+   font-size: 14px;
+   font-weight: 300;
+  }
+  h1{
+    color: #ffffff;
+    padding: -10px 0;
+    font-size: 50px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+  }
+  h2{
+    color: #ffffff;
+    padding: -10px 0;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+  }
+  .content_img{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-left: 100px;
+  }
+  .content_img div{
+    position: absolute;
+    bottom: 10;
+    left: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Poppins',sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  .content_img:hover{
+    cursor:pointer;
+  }
+  .content_img:hover div{
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7;
+    text-align: center
+  }
+  table, th, td {
+    color: #FFA500;
+    border: 5px solid;
+    margin-left: 400px;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+
+    width: 50%;
+  }
+  
+
+</style>
+<br><form method="get" action="/home">
+  <button class="block" button type="submit">Back</button>
+</form>
+</div>
+<center><h1>Parking Storey 1</h1></center><br>
+<br></br>
+<table>
+  <center>
+  <tr>
+      <th> SLOTS </th>
+      <th> STATUS </th>
+  </tr>
+  <tr>
+      <td>SLOT 1</td>
+      <td>
+          <div class = slot>{{slot1}}</div>
+      </td>
+  </tr>
+  <tr>
+      <td>SLOT 2</td>
+      <td>
+          <div class = slot>{{slot2}}</div>
+      </td>
+  </tr>
+  <center>
+</table>
+<br></br>
+{% endblock body%}

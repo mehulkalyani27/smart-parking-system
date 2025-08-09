@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block tittle%}
+PS4
+{% endblock tittle%}
+{% block body%}
+
+<link rel="stylesheet" href="../../static/css/spage.css" type="text/css">
+<br><form method="get" action="/home">
+    <button class="block" button type="submit">Back</button>
+</form>
+  </div>
+
+<center><h1>{{form.pname}}</h1></center><br>
+<center><img src="static/bg/4.jpg" class="d-block w-25" alt="..."><br></br>
+
+<div class="content_img">
+  <img src='static/loc.png'width="60" height="80" alt="i">
+    <div> {{form.padd}} </div>
+</div>
+<div class="content_img">
+  <img src='static/rup.png'width="50" height="70" alt="i">
+  <div> {{form.prate}} / Hour</div>
+</div>
+<div class="content_img">
+  <img src='static/plot.png'width="50" height="70" alt="i">
+    <div> Total Slot : {{form.tslot}} <br>Available : {{form.avail}} </div>
+</div>
+</center>
+<br></br>
+{% endblock body%}
